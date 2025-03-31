@@ -21,7 +21,7 @@ export const speechToText = async (audioFile) => {
     });
     return transcription;
   } catch (error) {
-    console.log(error);
+    console.log(error); 
     throw new Error("Failed to convert speech to text!");
   }
 };

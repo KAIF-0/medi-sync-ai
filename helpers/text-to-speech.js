@@ -9,7 +9,7 @@ export const textToSpeech = async (prompt) => {
       output_format: "mp3_44100_128",
     });
 
-    // await play(audio);
+    await play(audio);
     return audio;
   } catch (error) {
     console.log(error.message);
